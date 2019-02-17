@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-scaffolding",
+  "version": "1.0.0",
+  "description": "a basic nodejs scaffolding",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "npm test"
+  },
+  "author": "lemon8",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "method-override": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
