@@ -4,8 +4,7 @@
   "description": "a basic nodejs scaffolding",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "test": "npm test"
+    "start": "nodemon server.js"
   },
   "author": "lemon8",
   "license": "ISC",
