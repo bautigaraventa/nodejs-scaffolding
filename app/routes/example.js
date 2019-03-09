@@ -1,9 +1,9 @@
-// // var mongoose = require('mongoose');
+// var mongoose = require('mongoose');
 // var Example = mongoose.model('example');
-// var router = require('express').Router();
+var router = require('express').Router();
 
-// //Get all Examples
-// router.get('/', (req, res, next) => {
+//Get all Examples
+router.get('/', (req, res, next) => {
 //   Example.find((err, result) => {
 //     if (err) {
 //       res.status(500).send(err);
@@ -12,10 +12,10 @@
 //       res.json(result);
 //     }
 //     else {
-//       res.send("No Example was found!");
+      res.send("No Example was found!");
 //     }
 //   });
-// });
+});
 
 // //Get one Example by id
 // router.get('/:id', (req, res, next) => {
@@ -60,4 +60,4 @@
 //   });  
 // });
 
-// module.exports = router;
+module.exports = router;

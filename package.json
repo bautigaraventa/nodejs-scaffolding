@@ -4,8 +4,9 @@
   "description": "a basic nodejs scaffolding",
   "main": "server.js",
   "scripts": {
+    "debug": "nodemon --inspect-brk server.js",
     "start": "nodemon server.js",
-    "test": "mocha --debug-brk \"app/tests/**/*.spec.js\""
+    "test": "mocha \"app/tests/**/*.spec.js\""
   },
   "author": "lemon8",
   "license": "ISC",
