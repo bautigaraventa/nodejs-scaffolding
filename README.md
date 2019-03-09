@@ -1,5 +1,5 @@
 # nodejs-scaffolding
-A basic nodejs web API scaffolding.
+# A basic nodejs web API scaffolding.
 
 The idea of this repository is to have the minimun base to start a node.js project. It includes the basic libraries or dependencies which will be explained here.
 
