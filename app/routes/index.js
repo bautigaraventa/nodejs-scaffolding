@@ -1,5 +1,5 @@
 var router = require('express').Router();
 
-router.use('/api/example', require('./example'));
+router.use('/api/pet', require('./Pet.route'));
 
 module.exports = router;

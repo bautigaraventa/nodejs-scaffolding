@@ -10,7 +10,7 @@
             "name": "Debug Nodemon",
             "restart": true,
             "protocol": "inspector",
-            "preLaunchTask": "npm: debug",
+            "preLaunchTask": "npm: debug:nodemon",
             "port": 9229
         },
     ]

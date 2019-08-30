@@ -1,5 +1,5 @@
 var express = require('express');
-// var mongoose = require('mongoose');
+var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 var methodOverride = require('method-override');
@@ -17,13 +17,12 @@ app.use(methodOverride());
 
 app.use(router);
 
+// See if it's possible to import a single index.js that exports all the models (like routes)
+require('./app/models/Pet.model');
+
 app.use(require('./app/routes'));
 
-// See if it's possible to import a single index.js that exports all the models (like routes)
-// require('./app/models/example.js');
-
-
-//mongoose.connect('mongodb://localhost/example', { useNewUrlParser: true });
+mongoose.connect('mongodb://localhost:27017/pet', { useNewUrlParser: true });
 
 app.listen(PORT, () => {
   console.log('We are live on ' + PORT);
