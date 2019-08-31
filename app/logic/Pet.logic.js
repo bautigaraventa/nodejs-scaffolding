@@ -1,13 +1,11 @@
-// const PetModel = require('./../models/Pet.model');
-const mongoose = require('mongoose');
-var PetModel = mongoose.model('pet');
+const PetRepository = require('./../repositories/Pet.repository');
 
 module.exports = {
     Create: (pet) => {
-        return PetModel.create(pet);
+        return PetRepository.Create(pet);
     },
 
     GetAll: () => {
-        return PetModel.find();
+        return PetRepository.GetAll();
     }
 }

@@ -22,7 +22,7 @@ require('./app/models/Pet.model');
 
 app.use(require('./app/routes'));
 
-mongoose.connect('mongodb://localhost:27017/pet', { useNewUrlParser: true });
+mongoose.connect('mongodb://localhost:27017/vet', { useNewUrlParser: true });
 
 app.listen(PORT, () => {
   console.log('We are live on ' + PORT);

@@ -9,7 +9,7 @@
     "start": "nodemon server.js",
     "test": "jest"
   },
-  "author": "lemon8",
+  "author": "bautigaraventa",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
