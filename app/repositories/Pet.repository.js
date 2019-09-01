@@ -10,8 +10,12 @@ module.exports = {
         return PetModel.find();
     },
 
-    GetOne: () => {
-        return PetModel.findOne();
+    GetBy: (findBy) => {
+        return PetModel.find(findBy);
+    },
+
+    GetOne: (findBy) => {
+        return PetModel.findOne(findBy);
     },
 
     RemoveOne: () => {

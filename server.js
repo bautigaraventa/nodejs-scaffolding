@@ -17,7 +17,6 @@ app.use(methodOverride());
 
 app.use(router);
 
-// See if it's possible to import a single index.js that exports all the models (like routes)
 require('./app/models/Pet.model');
 
 app.use(require('./app/routes'));

@@ -10,20 +10,14 @@ router.get('/', async (req, res) => {
     }
 });
 
-// //Get one Pet by id
-// router.get('/:id', (req, res, next) => {
-//     Example.findOne({_id: req.params.id}, function (err, result) {
-//       if (err) {
-//         res.status(500).send(err);
-//       } 
-//       if(result) {
-//         res.json(result);
-//       } 
-//       else {
-//         res.send("No Example was found with this id!");
-//       } 
-//     });
-// });
+//Get one Pet by id
+router.get('/:gender', async (req, res) => {
+    try {
+        res.json(await PetLogic.GetByGender(req.params.gender));
+    } catch (error) {
+        res.send(error);
+    }
+});
 
 //Create Pet
 router.post('/', async (req, res) => {
